@@ -8,37 +8,24 @@ define(function(require, exports, module) {
         var tabManager = imports.tabManager;
         var save = imports.save;
 
-        /***** Initialization *****/
-        
         var plugin = new Plugin("LuaRun", main.consumes);
         var emit = plugin.getEmitter();
         
         function load() {
-            
-            save.on("beforeSave", function(e) {
+            save.on("beforeSave", function(e) { //TODO: move to a keybind
                 var tab = tabManager.focussedTab.document.value;
-                console.log("RUNLUA: " + tab)  
+                console.log("RUNLUA: " + tab) 
             })
         }
-        
-        /***** Methods *****/
-        
-        /***** Lifecycle *****/
-        
-        
-        plugin.on("fileSave", function() {
-            console.log("FILE SAVED")
-        });
-        
+
         plugin.on("load", function() {
             load();
         });
+        
         plugin.on("unload", function() {
         
         });
-        
-        /***** Register and define API *****/
-        
+
         plugin.freezePublicAPI({
             
         });

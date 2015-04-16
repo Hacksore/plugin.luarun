@@ -3,6 +3,7 @@
   "description": "Lets you run lua in GMOD",
   "version": "0.0.2",
   "author": "Hacksore",
+  "private": false,
   "contributors": [
     {
       "name": "Hacksore",
@@ -11,7 +12,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/Hacksore/plugin.luarun"
+    "url": "https://github.com/Hacksore/plugin.luarun.git"
   },
   "plugins": {
     "plugin": {}

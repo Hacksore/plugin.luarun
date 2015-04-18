@@ -1,3 +1,3 @@
-# c9.ide.simple
+# luarun
 
-This is the Cloud9 simple plugin example
+This is a plugin intended for the Gmod addon c9edit, it allows you to run lua while in Gmod.

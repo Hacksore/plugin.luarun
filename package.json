@@ -1,9 +1,8 @@
 {
   "name": "plugin.luarun",
   "description": "Lets you run lua in GMOD",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "author": "Hacksore",
-  "private": false,
   "contributors": [
     {
       "name": "Hacksore",
